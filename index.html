@@ -26,24 +26,26 @@
     <title>Cibo gustoso</title>
   </head>
   <body>
-    <div class="navbar">
-      <!-- <div class="nav-items-left"> -->
-      <ul class="nav-items-left">
-        <li><a href="#menu" class="nav-link">Menu</a></li>
-        <li><a href="#" class="nav-link">Team</a></li>
+    <header class="navigation">
+      <a href="#" class="logo">Cibo gustoso</a>
+      <ul class="navbar">
+        <li class="navlink"><a href="#about">About</a></li>
+        <li class="navlink"><a href="#menu">Menu</a></li>
+        <li class="navlink"><a href="#team">Team</a></li>
+        <li class="navlink"><a href="#contact">Contact</a></li>
       </ul>
-      <!-- </div> -->
-      <a href="#" class="logo nav-link">Cibo gustoso</a>
-      <!-- <div class="nav-items-right"> -->
-      <ul class="nav-items-right">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-      <!-- </div> -->
-    </div>
-    <header class="landing-page">
-      <h1>Made by Italians. Enjoyed by Everyone.</h1>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
+
+    <section>
+      <div class="landing-page">
+        <!-- <img src="./assets/images/background-image.png" alt="" /> -->
+        <h1>Made by Italians. Enjoyed by Everyone.</h1>
+      </div>
+    </section>
+
     <section class="about" id="about">
       <div class="about-container">
         <h1>Who are we?</h1>
@@ -54,15 +56,7 @@
           luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor.
         </p>
       </div>
-      <!-- <div class="slide-controls">
-        <span class="slider-previous arrow"
-          ><i class="fa-solid fa-arrow-left"></i
-        ></span>
-        <span class="slider-next arrow"
-          ><i class="fa-solid fa-arrow-right"></i
-        ></span>
-      </div> -->
-      <div class="container">
+      <div class="image-container">
         <ul class="control" id="custom-control">
           <li class="prev">
             <i class="fas fa-angle-left fa-2x"></i>
@@ -71,7 +65,7 @@
             <i class="fas fa-angle-right fa-2x"></i>
           </li>
         </ul>
-        <div class="my-slider">
+        <div class="slider">
           <img src="./assets/images/image1.png" alt="" />
           <img src="./assets/images/image2.png" alt="" />
           <img src="./assets/images/image3.png" alt="" />
@@ -89,23 +83,132 @@
         </p>
       </div>
       <div class="menu-btns">
-        <button>Drinks</button>
-        <button>Appetizers</button>
-        <button>Pasta</button>
-        <button>Pizza</button>
-        <button>Salads</button>
-        <button>Soups</button>
-        <button>Desserts</button>
+        <button value="drinks" id="drinks">Drinks</button>
+        <button value="appetizers" id="appetizers">Appetizers</button>
+        <button value="pasta" id="pasta">Pasta</button>
+        <button value="pizza" id="pizza">Pizza</button>
+        <button value="salads" id="salads">Salads</button>
+        <button value="desserts" id="desserts">Desserts</button>
       </div>
-      <div class="menu-content">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+      <div class="menu-content"></div>
+    </section>
+    <section class="team" id="team">
+      <div class="team-container">
+        <h1>Our team</h1>
+        <p>
+          In velit auctor non auctor in. Id pellentesque facilisis at lectus sed
+          in sit tellus mauris.
+        </p>
+      </div>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./assets/images/founder.png" alt="" />
+          <p class="team-member__name">Johnathan Demario</p>
+          <p class="team-member__title">Founder</p>
+          <p class="team-member__description">
+            In velit auctor non auctor in. Id pellentesque facilisis at lectus
+            sed in sit tellus mauris.
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/chef1.png" alt="" />
+          <p class="team-member__name">Bryan Machado</p>
+          <p class="team-member__title">Chef</p>
+          <p class="team-member__description">
+            Duis sed ut dolor viverra porttitor semper et faucibus facilisis.
+            Hac maecenas rhoncus.
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/chef2.png" alt="" />
+          <p class="team-member__name">Adam Joseph</p>
+          <p class="team-member__title">Chef</p>
+          <p class="team-member__description">
+            Faucibus sed vitae dui justo duis in. Egestas ipsum ut a elementum
+            at laoreet at quam vitae.
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/chef3.png" alt="" />
+          <p class="team-member__name">Putin Desque</p>
+          <p class="team-member__title">Chef</p>
+          <p class="team-member__description">
+            Molestie viverra mattis nisl vitae orci feugiat in. Aliquet quis
+            orci turpis aliquet.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="team"></section>
-    <section class="contact"></section>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <p class="contact-title">Contact</p>
+        <p class="contact-content">Have a question for us?</p>
+        <p class="contact-content">
+          Fill in the contact form and we will get back to you as soon as
+          possible.
+        </p>
+        <form class="contact-form">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstname"
+            placeholder="Your name..."
+          />
+
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastname"
+            placeholder="Your last name..."
+          />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your e-mail..."
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something..."
+          ></textarea>
+
+          <button class="submit-btn" type="submit" value="Submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <!-- <div class="footer-container"> -->
+      <div class="footer-nav">
+        <ul class="footer-nav__links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a class="footer-title" href="#">Cibo gustoso</a>
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <label for="email">Sign up to our newsletter</label>
+        <input type="email" id="email" name="email" placeholder="E-mail..." />
+      </div>
+      <!-- </div> -->
+    </footer>
     <script
       src="https://kit.fontawesome.com/afd19b9f4f.js"
       crossorigin="anonymous"

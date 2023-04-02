@@ -1,0 +1,168 @@
+{
+  "menu": {
+    "items": [
+      {
+        "name": "ESPRESSO",
+        "price": "$20",
+        "category": "drinks",
+        "description": ""
+      },
+      {
+        "name": "CAPPUCCINO",
+        "price": "$20",
+        "category": "drinks",
+        "description": ""
+      },
+      {
+        "name": "MACCHIATO",
+        "price": "$20",
+        "category": "drinks",
+        "description": ""
+      },
+      {
+        "name": "CAFFE LATTE",
+        "price": "$40",
+        "category": "drinks",
+        "description": ""
+      },
+      {
+        "name": "WATER",
+        "price": "$20",
+        "category": "drinks",
+        "description": ""
+      },
+      {
+        "name": "ORANGE JUICE",
+        "price": "$20",
+        "category": "drinks",
+        "description": ""
+      },
+      {
+        "name": "BRUSCHETTE WITH MOZZARELLA CHEESE",
+        "price": "$20",
+        "category": "appetizers",
+        "description": "roasted peppers, roasted tomatoes, pesto genovese prosciutto on bruschette"
+      },
+      {
+        "name": "CAPRESE SALAD",
+        "price": "$20",
+        "category": "appetizers",
+        "description": "mozzarella, cherry tomatoes, rocket salad, parmesan, pesto Genovese, aceto balsamico, baguette crostini"
+      },
+      {
+        "name": "BURRATA",
+        "price": "$20",
+        "category": "appetizers",
+        "description": "burrata mozzarella, tomatoes, basil, grissini breadsticks"
+      },
+      {
+        "name": "FOCCACINA",
+        "price": 40,
+        "category": "appetizers",
+        "description": "with proscuitto, hot sausage, bacon, pizza cheese and tomatoes or per your choice"
+      },
+      {
+        "name": "BRUSCHETTE WITH TOMATO SALSA",
+        "price": "$20",
+        "category": "appetizers",
+        "description": "tomato, olive oil, parsley, parmesan"
+      },
+      {
+        "name": "SPICY PENE WITH BEEF FILLET AND MOZZARELLA CHEESE",
+        "price": "$15",
+        "category": "pasta",
+        "description": "tomato sauce, chili paste, rocket salad, olives"
+      },
+      {
+        "name": "TAGLIATELLE WITH CHICKEN BREAST, PESTO GENOVESE PISTACHIO AND PINE NUTS",
+        "price": "$14",
+        "category": "pasta",
+        "description": "marinated chicken breast, pesto genovese"
+      },
+      {
+        "name": "HOMEMADE GNOCCHI WITH BEEF FILLET, PROSCIUTTO AND MUSHROOMS",
+        "price": "$14",
+        "category": "pasta",
+        "description": "pine nuts, parmesan, basil"
+      },
+      {
+        "name": "HOMEMADE GNOCCHI WITH QUATTRO FORMAGGI SAUCE TOSSED WITH CRISPY PARMESAN",
+        "price": "$15",
+        "category": "pasta",
+        "description": "gorgonzola, emmentaler, gouda, parmesan"
+      },
+      {
+        "name": "CAPRICCIOSA",
+        "price": "$12",
+        "category": "pizza",
+        "description": "pelati, pizza cheese, ham, mushrooms, olives"
+      },
+      {
+        "name": "MARGARITA",
+        "price": "$13",
+        "category": "pizza",
+        "description": "pelati, pizza chesse"
+      },
+      {
+        "name": "QUATTRO STAGIONE",
+        "price": "$16",
+        "category": "pizza",
+        "description": "pelati, pizza cheese, ham, spicy salami, mushrooms, prosciutto, olives"
+      },
+      {
+        "name": "TARTUFINA",
+        "price": "$20",
+        "category": "pizza",
+        "description": "truffle, pizza cheese, prosciutto, rocket salad"
+      },
+      {
+        "name": "CAESAR SALAD",
+        "price": "$9.5",
+        "category": "salads",
+        "description": "iceberg salad, grilled chicken breast, crispy bacon, parmesan, anchovies"
+      },
+      {
+        "name": "SALMON AND CALAMARI SALAD WITH SESAME SEED",
+        "price": "$12",
+        "category": "salads",
+        "description": "mixed green salad, cucumber, celeriac, ginger, lime dressing"
+      },
+      {
+        "name": "CHICKEN SALAD WITH RANCH DRESSING",
+        "price": "$10",
+        "category": "salads",
+        "description": "grilled chicken breast, mixed green salad, rocket salad, radicchio, grilled zucchini, tomato, smoked cheese, hazelnut"
+      },
+      {
+        "name": "SICHUAN SALAD",
+        "price": "$11",
+        "category": "salads",
+        "description": "marinated chicken, mixed green salad, mushrooms, cucumber, corncob, dressing, sesame, sweet chili sauce"
+      },
+      {
+        "name": "FRUIT PLATE",
+        "price": "$6",
+        "category": "desserts",
+        "description": "kiwi, pineapple, grapes, melon, bananas, apples, pears, orange, seasonal fruit, served with honey, raspberry sauce and passion fruit sauce"
+      },
+      {
+        "name": "HOMEMADE GELATO",
+        "price": "$2",
+        "category": "desserts",
+        "description": "chocolate, vanilla, hazelnut, pistachios, raspberry, pear (piece)"
+      },
+      {
+        "name": "BACIO ITALIANO",
+        "price": "$5",
+        "category": "desserts",
+        "description": "chocolate ball filled with vanilla cream and oreo cookies, served on passion fruit and white chocolate mousse, topped with hot chocolate"
+      },
+      {
+        "name": "BISCOTTO MOUSSE",
+        "price": "$5",
+        "category": "desserts",
+        "description": "perfect blend of the finest belgian white chocolate mousse with pieces of crunchy biscuit, milk chocolate icing"
+      }
+    ]
+  }
+}
