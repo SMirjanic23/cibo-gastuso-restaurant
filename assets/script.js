@@ -1,3 +1,5 @@
+//script
+
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.nav-link');
 
