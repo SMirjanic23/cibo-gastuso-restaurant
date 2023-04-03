@@ -1,7 +1,7 @@
-let navbar = document.querySelector('.navbar');
-let navLinks = document.querySelectorAll('.nav-link');
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelectorAll('.nav-link');
 
-let menuContent = document.querySelector('.menu-content');
+const menuContent = document.querySelector('.menu-content');
 const drinks = document.querySelector('#drinks');
 const appetizers = document.querySelector('#appetizers');
 const pasta = document.querySelector('#pasta');
@@ -11,28 +11,32 @@ const desserts = document.querySelector('#desserts');
 const menuBtn = document.querySelector('.menu-btns');
 
 const burger = document.querySelector('.burger i');
-const nav = document.querySelector('.navbar');
+const nav = document.querySelector('.navbar-closed');
 
 function toggleNav() {
   burger.classList.toggle('fa-bars');
   burger.classList.toggle('fa-times');
-  nav.classList.toggle('nav-active');
 }
 
 burger.addEventListener('click', function () {
   toggleNav();
+
+  if (nav.classList.contains('navbar-closed')) {
+    nav.classList = 'navbar-opened';
+  } else {
+    nav.classList = 'navbar-closed';
+  }
 });
 
-var slider = tns({
+const slider = tns({
   container: '.slider',
   items: 7,
   gutter: 20,
   slideBy: 1,
-  controlsPosition: 'bottom',
   mouseDrag: true,
   autoplay: false,
   autoplayButtonOutput: false,
-  controlsContainer: '#custom-control',
+  controlsContainer: '.control',
   responsive: {
     0: {
       items: 1,
@@ -52,8 +56,8 @@ var slider = tns({
 
 function getMenu() {
   let xmlHttp = new XMLHttpRequest();
-  xmlHttp.open('GET', '/menu.json', false); // false for synchronous request
-  xmlHttp.send(null);
+  xmlHttp.open('GET', '/menu.json', false);
+  xmlHttp.send();
   return JSON.parse(xmlHttp.responseText);
 }
 
@@ -73,13 +77,17 @@ function RestaurantMenu(selectedMenuBtn) {
        <p class="dots"></p>
        <p class="menu-item__price">${menu[el].price}</p>
        </div>
-       <p>${menu[el].description}</p>
+       <p  class="menu-item__description">${menu[el].description}</p>
      </div>`;
     }
   }
   menuContent.innerHTML = menuItems;
   menuItems = '';
 }
+
+window.addEventListener('load', () => {
+  RestaurantMenu('drinks');
+});
 
 menuBtn.addEventListener('click', (event) => {
   const selectedMenuBtn = event.target.value;
