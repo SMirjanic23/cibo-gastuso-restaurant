@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/restaurant.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
       rel="stylesheet"
@@ -26,188 +26,191 @@
     <title>Cibo gustoso</title>
   </head>
   <body>
-    <header class="navigation">
-      <a href="#" class="logo">Cibo gustoso</a>
-      <ul class="navbar">
-        <li class="navlink"><a href="#about">About</a></li>
-        <li class="navlink"><a href="#menu">Menu</a></li>
-        <li class="navlink"><a href="#team">Team</a></li>
-        <li class="navlink"><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <i class="fas fa-bars"></i>
+    <header>
+      <div class="navbar-container">
+        <div class="navigation">
+          <a href="#" class="logo">Cibo gustoso</a>
+          <div class="burger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="navbar-closed">
+          <li class="navlink"><a href="#about">About</a></li>
+          <li class="navlink"><a href="#menu">Menu</a></li>
+          <li class="navlink"><a href="#team">Team</a></li>
+          <li class="navlink"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </header>
-
-    <section>
-      <div class="landing-page">
-        <!-- <img src="./assets/images/background-image.png" alt="" /> -->
-        <h1>Made by Italians. Enjoyed by Everyone.</h1>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-container">
-        <h1>Who are we?</h1>
-        <p>
-          Vulputate in elit tincidunt elit scelerisque massa fusce pharetra.
-          Sagittis gravida lacus quisque dictum non pretium suspendisse
-          porttitor. Risus adipiscing semper ornare velit. Sagittis consequat
-          luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor.
-        </p>
-      </div>
-      <div class="image-container">
-        <ul class="control" id="custom-control">
-          <li class="prev">
-            <i class="fas fa-angle-left fa-2x"></i>
-          </li>
-          <li class="next">
-            <i class="fas fa-angle-right fa-2x"></i>
-          </li>
-        </ul>
-        <div class="slider">
-          <img src="./assets/images/image1.png" alt="" />
-          <img src="./assets/images/image2.png" alt="" />
-          <img src="./assets/images/image3.png" alt="" />
+    <main>
+      <section class="landing-page">
+        <h1 class="landing-page__title">
+          Made by Italians. Enjoyed by Everyone.
+        </h1>
+      </section>
+      <section class="about" id="about">
+        <div class="about-container">
+          <h1 class="about-title">Who are we?</h1>
+          <p class="about-description">
+            Vulputate in elit tincidunt elit scelerisque massa fusce pharetra.
+            Sagittis gravida lacus quisque dictum non pretium suspendisse
+            porttitor. Risus adipiscing semper ornare velit. Sagittis consequat
+            luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor.
+          </p>
         </div>
-      </div>
-    </section>
-    <section class="menu" id="menu">
-      <div class="container-menu">
-        <h1>Menu</h1>
-        <p>
-          Lacus lobortis nullam nam consectetur fermentum mattis pellentesque id
-          nulla. Risus convallis iaculis risus ac aliquam sit ultricies.
-          Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor
-          egestas nam congue elit dolor.
-        </p>
-      </div>
-      <div class="menu-btns">
-        <button value="drinks" id="drinks">Drinks</button>
-        <button value="appetizers" id="appetizers">Appetizers</button>
-        <button value="pasta" id="pasta">Pasta</button>
-        <button value="pizza" id="pizza">Pizza</button>
-        <button value="salads" id="salads">Salads</button>
-        <button value="desserts" id="desserts">Desserts</button>
-      </div>
-      <div class="menu-content"></div>
-    </section>
-    <section class="team" id="team">
-      <div class="team-container">
-        <h1>Our team</h1>
-        <p>
-          In velit auctor non auctor in. Id pellentesque facilisis at lectus sed
-          in sit tellus mauris.
-        </p>
-      </div>
-      <div class="team-members">
-        <div class="team-member">
-          <img src="./assets/images/founder.png" alt="" />
-          <p class="team-member__name">Johnathan Demario</p>
-          <p class="team-member__title">Founder</p>
-          <p class="team-member__description">
+        <div class="image-container">
+          <ul class="control" id="custom-control">
+            <li class="prev">
+              <i class="fas fa-angle-left fa-2x"></i>
+            </li>
+            <li class="next">
+              <i class="fas fa-angle-right fa-2x"></i>
+            </li>
+          </ul>
+          <div class="slider">
+            <img src="./assets/images/image1.png" alt="" />
+            <img src="./assets/images/image2.png" alt="" />
+            <img src="./assets/images/image3.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="menu" id="menu">
+        <div class="menu-container">
+          <h1 class="menu-container__title">Menu</h1>
+          <p class="menu-container__description">
+            Lacus lobortis nullam nam consectetur fermentum mattis pellentesque
+            id nulla. Risus convallis iaculis risus ac aliquam sit ultricies.
+            Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor
+            egestas nam congue elit dolor.
+          </p>
+        </div>
+        <div class="menu-btns">
+          <button value="drinks" id="drinks">Drinks</button>
+          <button value="appetizers" id="appetizers">Appetizers</button>
+          <button value="pasta" id="pasta">Pasta</button>
+          <button value="pizza" id="pizza">Pizza</button>
+          <button value="salads" id="salads">Salads</button>
+          <button value="desserts" id="desserts">Desserts</button>
+        </div>
+        <div class="menu-content"></div>
+      </section>
+      <section class="team" id="team">
+        <div class="team-container">
+          <h1 class="team-container__title">Our team</h1>
+          <p class="team-container__description">
             In velit auctor non auctor in. Id pellentesque facilisis at lectus
             sed in sit tellus mauris.
           </p>
         </div>
-        <div class="team-member">
-          <img src="./assets/images/chef1.png" alt="" />
-          <p class="team-member__name">Bryan Machado</p>
-          <p class="team-member__title">Chef</p>
-          <p class="team-member__description">
-            Duis sed ut dolor viverra porttitor semper et faucibus facilisis.
-            Hac maecenas rhoncus.
-          </p>
+        <div class="team-members">
+          <div class="team-member">
+            <img src="./assets/images/founder.png" alt="" />
+            <p class="team-member__name">Johnathan Demario</p>
+            <p class="team-member__title">Founder</p>
+            <p class="team-member__description">
+              In velit auctor non auctor in. Id pellentesque facilisis at lectus
+              sed in sit tellus mauris.
+            </p>
+          </div>
+          <div class="team-member">
+            <img src="./assets/images/chef1.png" alt="" />
+            <p class="team-member__name">Bryan Machado</p>
+            <p class="team-member__title">Chef</p>
+            <p class="team-member__description">
+              Duis sed ut dolor viverra porttitor semper et faucibus facilisis.
+              Hac maecenas rhoncus.
+            </p>
+          </div>
+          <div class="team-member">
+            <img src="./assets/images/chef2.png" alt="" />
+            <p class="team-member__name">Adam Joseph</p>
+            <p class="team-member__title">Chef</p>
+            <p class="team-member__description">
+              Faucibus sed vitae dui justo duis in. Egestas ipsum ut a elementum
+              at laoreet at quam vitae.
+            </p>
+          </div>
+          <div class="team-member">
+            <img src="./assets/images/chef3.png" alt="" />
+            <p class="team-member__name">Putin Desque</p>
+            <p class="team-member__title">Chef</p>
+            <p class="team-member__description">
+              Molestie viverra mattis nisl vitae orci feugiat in. Aliquet quis
+              orci turpis aliquet.
+            </p>
+          </div>
         </div>
-        <div class="team-member">
-          <img src="./assets/images/chef2.png" alt="" />
-          <p class="team-member__name">Adam Joseph</p>
-          <p class="team-member__title">Chef</p>
-          <p class="team-member__description">
-            Faucibus sed vitae dui justo duis in. Egestas ipsum ut a elementum
-            at laoreet at quam vitae.
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h1 class="contact-container__title">Contact</h1>
+          <p class="contact-container__content">Have a question for us?</p>
+          <p class="contact-container__content">
+            Fill in the contact form and we will get back to you as soon as
+            possible.
           </p>
+          <form class="contact-form">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstname"
+              placeholder="Your name..."
+            />
+
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastname"
+              placeholder="Your last name..."
+            />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your e-mail..."
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something..."
+            ></textarea>
+
+            <button class="submit-btn" type="submit" value="Submit">
+              Submit
+            </button>
+          </form>
         </div>
-        <div class="team-member">
-          <img src="./assets/images/chef3.png" alt="" />
-          <p class="team-member__name">Putin Desque</p>
-          <p class="team-member__title">Chef</p>
-          <p class="team-member__description">
-            Molestie viverra mattis nisl vitae orci feugiat in. Aliquet quis
-            orci turpis aliquet.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="contact-container">
-        <p class="contact-title">Contact</p>
-        <p class="contact-content">Have a question for us?</p>
-        <p class="contact-content">
-          Fill in the contact form and we will get back to you as soon as
-          possible.
-        </p>
-        <form class="contact-form">
-          <label for="firstName">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstname"
-            placeholder="Your name..."
-          />
-
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastname"
-            placeholder="Your last name..."
-          />
-          <label for="email">E-mail</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your e-mail..."
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write something..."
-          ></textarea>
-
-          <button class="submit-btn" type="submit" value="Submit">
-            Submit
-          </button>
-        </form>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="footer">
-      <!-- <div class="footer-container"> -->
-      <div class="footer-nav">
-        <ul class="footer-nav__links">
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <a class="footer-title" href="#">Cibo gustoso</a>
-        <div class="socials">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
+      <div class="footer-container">
+        <div class="footer-nav">
+          <ul class="footer-nav__links">
+            <li class="footer-nav__link"><a href="#menu">Menu</a></li>
+            <li class="footer-nav__link"><a href="#team">Team</a></li>
+            <li class="footer-nav__link"><a href="#about">About</a></li>
+            <li class="footer-nav__link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a class="footer-title" href="#">Cibo gustoso</a>
+          <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <label for="email">Sign up to our newsletter</label>
+          <input type="email" id="email" name="email" placeholder="E-mail..." />
         </div>
       </div>
-      <div class="footer-newsletter">
-        <label for="email">Sign up to our newsletter</label>
-        <input type="email" id="email" name="email" placeholder="E-mail..." />
-      </div>
-      <!-- </div> -->
     </footer>
     <script
       src="https://kit.fontawesome.com/afd19b9f4f.js"
